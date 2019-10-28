@@ -19,7 +19,8 @@
             <h1 class="text-center">Ejercicio Vehículos</h1>
         </header>
         <br>
-        <section>
+        <!-- / fromulario de creación de vehículo / -->
+        <section id="createCarForm">
             <form>
                 <div class="form-row d-flex justify-content-center">
                     <div class="form-group col-2 mx-5">
@@ -36,19 +37,59 @@
                     </div>
                 </div>
                 <div class="form-group col-2 offset-2 mt-3">
-                    <input class="form-control btn btn-primary" id="createCar" type="button" value="Create car">
+                    <input class="form-control btn btn-primary" id="createCarBtn" type="button" value="Create car">
                 </div>
             </form>
         </section>
         <section id="carInfo" class="offset-2 mt-5"></section>
         <hr>
+        <!-- / fromulario de creación de ruedas / -->
+        <section class="d-none" id="createWheelsForm">
+            <h3 class="text-center mb-5">Wheels</h3>
+            <form>
+                <div class="form-row d-flex justify-content-center">
+                    <div class="form-group col-2 ">
+                        <label for="wheelFLBrand">Front left brand</label>
+                        <input class="wheel_brand form-control" type="text" name="wheelFLBrand" id="wheelFLBrand">
+                    </div>
+                    <div class="form-group col-2 ">
+                        <label for="wheelFLDiameter">Front left diameter</label>
+                        <input class="wheel_diameter form-control" type="text" name="wheelFLDiameter" id="wheelFLDiameter">
+                    </div>
+                    <div class="form-group col-2 ">
+                        <label for="wheelFRBrand">Front right brand</label>
+                        <input class="wheel_brand form-control" type="text" name="wheelFRBrand" id="wheelFRBrand">
+                    </div>
+                    <div class="form-group col-2 ">
+                        <label for="wheelFRDiameter">Front right diameter</label>
+                        <input class="wheel_diameter form-control" type="text" name="wheelFRDiameter" id="wheelFRDiameter">
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="form-group col-2 ">
+                        <label for="wheelBLBrand">Back left brand</label>
+                        <input class="wheel_brand form-control" type="text" name="wheelBLBrand" id="wheelBLBrand">
+                    </div>
+                    <div class="form-group col-2 ">
+                        <label for="wheelBLDiameter">Back left diameter</label>
+                        <input class="wheel_diameter form-control" type="text" name="wheelBLDiameter" id="wheelBLDiameter">
+                    </div>
+                    <div class="form-group col-2 ">
+                        <label for="wheelBRBrand">Back right brand</label>
+                        <input class="wheel_brand form-control" type="text" name="wheelBRBrand" id="wheelBRBrand">
+                    </div>
+                    <div class="form-group col-2 ">
+                        <label for="wheelBRDiameter">Back right diameter</label>
+                        <input class="wheel_diameter form-control" type="text" name="wheelBRDiameter" id="wheelBRDiameter">
+                    </div>
+                </div>
+                <div class="form-group col-2 offset-2 mt-3">
+                    <input class="form-control btn btn-primary" id="createWheelsBtn" type="button" value="Add wheels">
+                </div>
+            </form>
+        </section>
+        <section id="wheelsInfo" class="offset-2 mt-5"></section>
     </div>
     <!-- container -->
-
-    <!--
-    <p id="carInfo"></p>
-    <button onclick="createCar('1212SDS','SEAT','ROJO')">Create car</button>
-    -->
 
     <!-- // Scripts // -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
